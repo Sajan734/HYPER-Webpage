@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
-	--dark-color-a: #667aff;
-	--dark-color-b: #7386ff;
-	--light-color: #e6e9ff;
+	--dark-color-a: #1d1e20;
+	--dark-color-b: #2b2d33;
+	--light-color: #ffbf28;
 	--success-color: #5cb85c;
 	--error-color: #d9534f;
 }
@@ -45,6 +45,12 @@ a {
 	background: #fff;
 	margin: 30px auto;
 	overflow: hidden;
+}
+
+.title {
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: 10px;
 }
 
 .chat-header {
@@ -129,7 +135,7 @@ a {
 
 /* Join Page */
 .join-container {
-	max-width: 500px;
+    max-width: 1200px;
 	margin: 80px auto;
 	color: #fff;
 }
@@ -145,6 +151,16 @@ a {
 .join-main {
 	padding: 30px 40px;
 	background: var(--dark-color-b);
+}
+
+.username {
+    border-radius: 10px;
+    border: none;
+    background-color: #dee69f;
+}
+
+.username:placeholder {
+    margin-left: 20px;
 }
 
 .join-main p {
@@ -187,4 +203,8 @@ a {
 	.chat-sidebar {
 		display: none;
 	}
+}
+
+.btn {
+    border-radius: 10px;
 }

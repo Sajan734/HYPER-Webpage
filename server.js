@@ -27,7 +27,7 @@ io.on('connection', socket => {
     socket.join(user.room);
 
     // Welcome current user
-    socket.emit('message', formatMessage(botName, 'Welcome to ChatCord!'));
+    socket.emit('message', formatMessage(botName, 'Welcome to Hyper!'));
 
     // Broadcast when a user connects
     socket.broadcast
@@ -70,6 +70,6 @@ io.on('connection', socket => {
   });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = 3000;
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
