@@ -16,7 +16,7 @@
 	<body>
 		<div class="join-container">
 			<header class="join-header">
-				<h1><i class="fas fa-smile"></i> Hyper Chatroom</h1>
+				<h1 class="title">Hyper Chatroom</h1>
 			</header>
 			<main class="join-main">
 				<form action="chat.html">
@@ -27,12 +27,13 @@
 							name="username"
 							id="username"
 							placeholder="Enter username..."
-							required
+                            required
+                            class="username"
 						/>
 					</div>
 					<div class="form-control">
 						<label for="room">Room</label>
-						<select name="room" id="room">
+						<select name="room" id="room"  class="username">
 							<option value="JavaScript">Room 1</option>
 							<option value="Python">Room 2</option>
 							<option value="PHP">Room 3</option>
